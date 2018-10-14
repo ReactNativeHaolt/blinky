@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "Blinky",
+	"version": "1.0",
+
+	"description": "Add on for Blinky web app",
+	"icons": {
+		"64":"BLINK.png",
+		"32":"BLINK.png",
+		"16":"BLINK.png",
+		"128":"BLINK.png"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	// "background_page": "popup.html",
+	"browser_action": {
+		"default_icon": "icon3.png",
+		"name": "Blinky",
+		"default_popup": "popup.html"
+	} ,
+	"permissions": [
+		"contextMenus",
+		"tabs",
+		"<all_urls>"
+	]
+}
